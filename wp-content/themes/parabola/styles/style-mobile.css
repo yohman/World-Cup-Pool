@@ -1,0 +1,154 @@
+/* =Responsive Structure
+----------------------------------------------- */
+@media (max-width: 1100px) {
+     body.mobile #header, body.mobile #access, body.mobile #branding, body.mobile .topmenu { width:100%; }
+	body.mobile #header-full, body.mobile #footer { min-width: 100%; }
+	body.mobile #wrapper, body.mobile #colophon, body.mobile #main, body.mobile article.post, body.mobile #container, body.mobile #linky {width: auto;}
+	body.mobile #branding, body.mobile #bg_image { min-height:100px; }
+
+	body.mobile #bg_image {width:100%;}
+	body.mobile #header-container > div {height:100%;}
+
+	body.mobile a#logo { height:100%; display: block !important; }
+	body.mobile a#logo img { width:auto; max-width:90%;height:80%; }
+	body.mobile.safari a#logo img { max-height: 80px;height:auto; }
+
+	body.mobile .nivo-caption h2 {margin-bottom:5px;}
+
+	body.mobile #slefts, body.mobile #srights {display:none;}
+
+	body.mobile #access .menu-header, body.mobile div.menu {margin:0 5px;}
+	body.mobile #container[class*='column'] #primary, body.mobile #container[class*='column'] #secondary,
+	body.mobile #container[class*='column'] #content {width:100%;float:none;margin:0;clear:both;}
+	body.mobile #container[class*='column'] #content {margin-bottom:20px !important;}
+
+	body.mobile #slider {width:auto;height:auto;}
+
+	body.mobile #content img, body.mobile #content article.post img, body.mobile #content article .wp-caption, body.mobile article embed {
+		max-width:100% !important;
+	}
+
+	body.mobile #site-title span a {font-size:35px;line-height: 40px;}
+	body.mobile #site-description {font-size:15px;line-height: 20px;}
+
+	body.mobile #site-title, body.mobile #site-description { margin-left: 5px; }
+
+	body.mobile article.post, body.mobile article.page {padding:20px 10px 10px;}
+	body.mobile article.sticky {padding:20px 5px 5px;border-width:5px;}
+	body.mobile .footertwo .widget-area, body.mobile .footerthree .widget-area, body.mobile .footerfour .widget-area {width:98%;margin-left:1%;}
+	body.mobile {-webkit-text-size-adjust: 100%;} /* Iphone browser fix*/
+}
+
+@media (max-width: 800px) {
+	#header, #access, #branding, .topmenu { width:100%; }
+	#header-full, #footer { min-width: 100%; }
+	#wrapper, #colophon,  #main, article.post, #container, #linky {width: auto;}
+	#branding, #bg_image { min-height:100px; }
+
+	#bg_image {width:100%;}
+	#header-container > div {height:100%;}
+
+	a#logo { height:100%; display: block !important; }
+	a#logo img { width:auto; max-width:90%;height:80%; }
+	.safari a#logo img { max-height: 80px;height:auto; }
+
+	.nivo-caption h2 {margin-bottom:5px;}
+
+	#slefts, #srights {display:none;}
+
+	#access .menu-header, div.menu {margin:0 5px;}
+	#container[class*='column'] #primary, #container[class*='column'] #secondary,
+	#container[class*='column'] #content {width:100%;float:none;margin:0;clear:both;}
+	#container[class*='column'] #content {margin-bottom:20px !important;}
+
+	#slider {width:auto;height:auto;}
+
+	#front-columns > div {width:49%;}
+	#front-columns > div:nth-child(2n+2){margin-right:0;}
+	.column-image img { height:auto; }
+	.column-image > div { }
+	#column3 {clear:left;}
+
+	#content img, #content article.post img, #content article .wp-caption, article embed {
+		max-width:100% !important;
+	}
+
+	#site-title span a {font-size:35px;line-height: 40px;}
+	#site-description {font-size:15px;line-height: 20px;}
+
+	#site-title, #site-description { margin-left: 5px; }
+
+	article.post, article.page {padding:20px 10px 10px;}
+	article.sticky {padding:20px 5px 5px;border-width:5px;}
+	.footertwo .widget-area, .footerthree .widget-area, .footerfour .widget-area {width:98%;margin-left:1%;}
+	body {-webkit-text-size-adjust: 100%;} /* Iphone browser fix*/
+}
+
+@media (max-width: 650px) {
+	body, #content, #content p, #content ul, #content ol,#content code, #content pre, #content blockquote {
+		font-size: 13px !important;}
+
+	#branding {	height:auto; }
+	a#logo img {margin-top:-25px;max-height:75%;max-width:90%;width:auto;height:auto;}
+	#header-container > div { margin-top:35px; }
+
+	#site-title span a {font-size:25px;line-height: 30px;}
+	#site-description {margin-top:3px;font-size:12px;line-height: 15px;}
+	#front-text1 h1, #front-text2 h1 {font-size:2em;line-height:1.3em;}
+	#front-text1 h1{margin-top:20px;}
+	#front-text2 h1{margin-bottom:0px;}
+	#frontpage blockquote { font-size: 1.0em; line-height: 1.6em; padding: 10px; }
+
+	.slider-wrapper {margin:15px auto;}
+	.nivo-caption {padding:8px;}
+	.nivo-caption h2 {margin-bottom:1px;font-size:14px;}
+
+	article.intro .entry-content {font-size: 12px;}
+	.entry-title {font-size: 21px;}
+	.featured-post .entry-title {font-size: 14px;}
+	.singular .entry-title {font-size: 28px;}
+	.entry-meta a , .entry-meta, .comments-link{
+		font-size: 10px !important;
+	}
+	#content .entry-title {font-size:20px !important;}
+	#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+		margin-left:0 !important;}
+
+	#front-columns > div { margin-bottom: 10px; }
+
+	.widget-area a:link, .widget-area a:visited { font-size:12px !important; }
+	.tinynav	{ display: block;}
+    #access .menu ul:first-child { display: none;}
+	.theme-default .nivo-caption { font-size:9px; }
+	#content p, #content ul, #content ol, .sidey, .sidey a, table, table td { line-height: 1.4em; }
+
+	.slider-bullets .nivo-controlNav a { width: 7px; height: 7px; margin-top: 4px; }
+	.theme-default .nivo-controlNav:before, .theme-default .nivo-controlNav:after { border-top-width: 20px; }
+	.theme-default .nivo-controlNav { height: 20px; }
+	.nivo-directionNav { display: none; }
+
+	#header .socials a { width: 20px; height: 20px; }
+	#header .socials a img { width: 20px; height: 20px; }
+
+	.nivo-caption {position:relative;padding:5px;}
+
+}
+
+
+@media (max-width: 480px) {
+	body, #content, #content p, #content ul, #content ol,#content code, #content pre, #content blockquote {
+		font-size: 12px !important;}
+
+	#site-title span a{font-size: 18px;line-height:20px;}
+	#site-description {	font-size: 11px;line-height:10px;}
+	.nivo-caption h2 {margin-bottom:0px;font-size:12px;}
+
+	body {padding: 0;}
+	#page {margin-top: 0;}
+	.magazine-layout #content article.post, .magazine-layout .search #content article{margin:5px 0;width:100%;}
+}
+
+@media (max-width: 400px) {
+#front-columns > div { width:100%; margin-bottom: 3px; }
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>phpMyAdmin</title>
+    <link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?server=1&amp;token=e60ad9f45af7d20c7007f44aff2aded3&amp;js_frame=right&amp;nocache=5425602696" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/jquery/jquery-ui-1.8.custom.css" />
+    <meta name="robots" content="noindex,nofollow" />
+<script src="./js/cross_framing_protection.js?ts=1344778698" type="text/javascript"></script>
+<script src="./js/jquery/jquery-1.4.4.js?ts=1344778698" type="text/javascript"></script>
+<script src="./js/update-location.js?ts=1344778698" type="text/javascript"></script>
+<script src="./js/config.js?ts=1344778698" type="text/javascript"></script>
+<script src="./js/functions.js?ts=1344778698" type="text/javascript"></script>
+<script src="./js/jquery/jquery.qtip-1.0.0.min.js?ts=1344778698" type="text/javascript"></script>
+<script src="./js/messages.php?lang=en&amp;db=yohmanco_wc2014&amp;token=e60ad9f45af7d20c7007f44aff2aded3" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+// Updates the title of the frameset if possible (ns4 does not allow this)
+if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+    && typeof(parent.document.title) == 'string') {
+    parent.document.title = 'box449.bluehost.com / localhost / yohmanco_wc2014 / wc_country | phpMyAdmin 3.4.11.1';
+}
+
+// ]]>
+</script>
+        <meta name="OBGZip" content="true" />
+                <!--[if IE 6]>
+        <style type="text/css">
+        /* <![CDATA[ */
+        html {
+            overflow-y: scroll;
+        }
+        /* ]]> */
+        </style>
+        <![endif]-->
+    </head>
+
+    <body>
+            <div id="prefs_autoload" class="notice" style="display:none">
+        <form action="prefs_manage.php" method="post">
+            <input type="hidden" name="token" value="e60ad9f45af7d20c7007f44aff2aded3" />
+            <input type="hidden" name="json" value="" />
+            <input type="hidden" name="submit_import" value="1" />
+            <input type="hidden" name="return_url" value="export.php?" />
+            Your browser has phpMyAdmin configuration for this domain. Would you like to import it for current session?            <br />
+            <a href="#yes">Yes</a> / <a href="#no">No</a>
+        </form>
+    </div>
+    <div id="serverinfo">
+<a href="main.php?token=e60ad9f45af7d20c7007f44aff2aded3" class="item">        <img class="icon" src="./themes/pmahomme/img/s_host.png" width="16" height="16" alt="" /> 
+localhost</a>
+        <span class="separator"><img class="icon" src="./themes/pmahomme/img/item_ltr.png" width="5" height="9" alt="-" /></span>
+<a href="db_structure.php?db=yohmanco_wc2014&amp;token=e60ad9f45af7d20c7007f44aff2aded3" class="item">        <img class="icon" src="./themes/pmahomme/img/s_db.png" width="16" height="16" alt="" /> 
+yohmanco_wc2014</a>
+        <span class="separator"><img class="icon" src="./themes/pmahomme/img/item_ltr.png" width="5" height="9" alt="-" /></span>
+<a href="sql.php?db=yohmanco_wc2014&amp;table=wc_country&amp;token=e60ad9f45af7d20c7007f44aff2aded3" class="item">        <img class="icon" src="./themes/pmahomme/img/s_tbl.png" width="16" height="16" alt="" /> 
+wc_country</a>
+</div>
+<!-- PMA-SQL-ERROR -->
+    <div class="error"><h1>Error</h1>
+    <p><strong>SQL query:</strong>
+<a href="./url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fselect.html&amp;token=e60ad9f45af7d20c7007f44aff2aded3" target="mysql_doc"><img class="icon" src="./themes/pmahomme/img/b_help.png" width="11" height="11" alt="Documentation" title="Documentation" /></a><a href="tbl_sql.php?sql_query=SELECT+name+%2C+name+as+name2+%2C+group_name++FROM+%60wc_country%60++WHERE+%28%28%60wc_country%60.%60name%60+%3D+%27Brazil%27+AND+%60wc_country%60.%60name2%60+%3D+%27Brazil%27+AND+%60wc_country%60.%60group_name%60+%3D+%27A%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Croatia%27+AND+%60wc_country%60.%60name2%60+%3D+%27Croatia%27+AND+%60wc_country%60.%60group_name%60+%3D+%27A%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Mexico%27+AND+%60wc_country%60.%60name2%60+%3D+%27Mexico%27+AND+%60wc_country%60.%60group_name%60+%3D+%27A%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Cameroon%27+AND+%60wc_country%60.%60name2%60+%3D+%27Cameroon%27+AND+%60wc_country%60.%60group_name%60+%3D+%27A%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Spain%27+AND+%60wc_country%60.%60name2%60+%3D+%27Spain%27+AND+%60wc_country%60.%60group_name%60+%3D+%27B%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Netherlands%27+AND+%60wc_country%60.%60name2%60+%3D+%27Netherlands%27+AND+%60wc_country%60.%60group_name%60+%3D+%27B%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Chile%27+AND+%60wc_country%60.%60name2%60+%3D+%27Chile%27+AND+%60wc_country%60.%60group_name%60+%3D+%27B%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Australia%27+AND+%60wc_country%60.%60name2%60+%3D+%27Australia%27+AND+%60wc_country%60.%60group_name%60+%3D+%27B%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Colombia%27+AND+%60wc_country%60.%60name2%60+%3D+%27Colombia%27+AND+%60wc_country%60.%60group_name%60+%3D+%27C%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Greece%27+AND+%60wc_country%60.%60name2%60+%3D+%27Greece%27+AND+%60wc_country%60.%60group_name%60+%3D+%27C%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Cote%2520d%27%27Ivoire%27+AND+%60wc_country%60.%60name2%60+%3D+%27Cote%2520d%27%27Ivoire%27+AND+%60wc_country%60.%60group_name%60+%3D+%27C%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Japan%27+AND+%60wc_country%60.%60name2%60+%3D+%27Japan%27+AND+%60wc_country%60.%60group_name%60+%3D+%27C%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Uruguay%27+AND+%60wc_country%60.%60name2%60+%3D+%27Uruguay%27+AND+%60wc_country%60.%60group_name%60+%3D+%27D%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Costa+Rica%27+AND+%60wc_country%60.%60name2%60+%3D+%27Costa+Rica%27+AND+%60wc_country%60.%60group_name%60+%3D+%27D%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27England%27+AND+%60wc_country%60.%60name2%60+%3D+%27England%27+AND+%60wc_country%60.%60group_name%60+%3D+%27D%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Italy%27+AND+%60wc_country%60.%60name2%60+%3D+%27Italy%27+AND+%60wc_country%60.%60group_name%60+%3D+%27D%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Switzerland%27+AND+%60wc_country%60.%60name2%60+%3D+%27Switzerland%27+AND+%60wc_country%60.%60group_name%60+%3D+%27E%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Ecuador%27+AND+%60wc_country%60.%60name2%60+%3D+%27Ecuador%27+AND+%60wc_country%60.%60group_name%60+%3D+%27E%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27France%27+AND+%60wc_country%60.%60name2%60+%3D+%27France%27+AND+%60wc_country%60.%60group_name%60+%3D+%27E%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Honduras%27+AND+%60wc_country%60.%60name2%60+%3D+%27Honduras%27+AND+%60wc_country%60.%60group_name%60+%3D+%27E%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Argentina%27+AND+%60wc_country%60.%60name2%60+%3D+%27Argentina%27+AND+%60wc_country%60.%60group_name%60+%3D+%27F%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Bosnia+and+Herzegovina%27+AND+%60wc_country%60.%60name2%60+%3D+%27Bosnia+and+Herzegovina%27+AND+%60wc_country%60.%60group_name%60+%3D+%27F%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Iran%27+AND+%60wc_country%60.%60name2%60+%3D+%27Iran%27+AND+%60wc_country%60.%60group_name%60+%3D+%27F%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Nigeria%27+AND+%60wc_country%60.%60name2%60+%3D+%27Nigeria%27+AND+%60wc_country%60.%60group_name%60+%3D+%27F%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Germany%27+AND+%60wc_country%60.%60name2%60+%3D+%27Germany%27+AND+%60wc_country%60.%60group_name%60+%3D+%27G%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Portugal%27+AND+%60wc_country%60.%60name2%60+%3D+%27Portugal%27+AND+%60wc_country%60.%60group_name%60+%3D+%27G%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Ghana%27+AND+%60wc_country%60.%60name2%60+%3D+%27Ghana%27+AND+%60wc_country%60.%60group_name%60+%3D+%27G%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27United+States%27+AND+%60wc_country%60.%60name2%60+%3D+%27United+States%27+AND+%60wc_country%60.%60group_name%60+%3D+%27G%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Belgium%27+AND+%60wc_country%60.%60name2%60+%3D+%27Belgium%27+AND+%60wc_country%60.%60group_name%60+%3D+%27H%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Algeria%27+AND+%60wc_country%60.%60name2%60+%3D+%27Algeria%27+AND+%60wc_country%60.%60group_name%60+%3D+%27H%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27Russia%27+AND+%60wc_country%60.%60name2%60+%3D+%27Russia%27+AND+%60wc_country%60.%60group_name%60+%3D+%27H%27%29+OR+%28%60wc_country%60.%60name%60+%3D+%27South+Korea%27+AND+%60wc_country%60.%60name2%60+%3D+%27South+Korea%27+AND+%60wc_country%60.%60group_name%60+%3D+%27H%27%29%29&amp;show_query=1&amp;db=yohmanco_wc2014&amp;table=wc_country&amp;token=e60ad9f45af7d20c7007f44aff2aded3"><span class="nowrap"><img src="./themes/pmahomme/img/b_edit.png" title="Edit" alt="Edit" class="icon" width="16" height="16" /> Edit</span></a>    </p>
+    <p>
+        SELECT name , name as name2 , group_name  FROM `wc_country`  WHERE ((`wc_country`.`name` = 'Brazil' AND `wc_country`.`name2` = 'Brazil' AND `wc_country`.`group_name` = 'A') OR (`wc_country`.`name` = 'Croatia' AND `wc_country`.`name2` = 'Croatia' AND `wc_country`.`group_name` = 'A') OR (`wc_country`.`name` = 'Mexico' AND `wc_country`.`name2` = 'Mexico' AND `wc_country`.`group_name` = 'A') OR (`wc_country`.`name` = 'Cameroon' AND `wc_country`.`name2` = 'Cameroon' AND `wc_country`.`group_name` = 'A') OR (`wc_country`.`name` = 'Spain' AND `wc_country`.`name2` = 'Spain' AND `wc_country`.`group_name` = 'B') OR (`wc_country`.`name` = 'Netherlands' AND `wc_country`.`name2` = 'Netherlands' AND `wc_country`.`group_name` = 'B') OR (`wc_country`.`name` = 'Chile' AND `wc_country`.`name2` = 'Chile' AND `wc_country`.`group_name` = 'B') OR (`wc_country`.`name` = 'Australia' AND `wc_country`.`name2` = 'Australia' AND `wc_country`.`group_name` = 'B') OR (`wc_country`.`name` = 'Colombia' AND `wc_country`[...]
+    </p>
+<p>
+    <strong>MySQL said: </strong><a href="./url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Ferror-messages-server.html&amp;token=e60ad9f45af7d20c7007f44aff2aded3" target="mysql_doc"><img class="icon" src="./themes/pmahomme/img/b_help.png" width="11" height="11" alt="Documentation" title="Documentation" /></a>
+</p>
+<code>
+#1054 - Unknown column 'wc_country.name2' in 'where clause'
+</code><br />
+</div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('en', 'utf8_general_ci', '1', 'yohmanco_wc2014', 'wc_country', 'e60ad9f45af7d20c7007f44aff2aded3');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        'yohmanco_wc2014',
+        'wc_country',
+        'SELECT name , name as name2 , group_name  FROM `wc_country`  WHERE ((`wc_country`.`name` = \'Brazil\' AND `wc_country`.`name2` = \'Brazil\' AND `wc_country`.`group_name` = \'A\') OR (`wc_country`.`name` = \'Croatia\' AND `wc_country`.`name2` = \'Croatia\' AND `wc_country`.`group_name` = \'A\') OR (`wc_country`.`name` = \'Mexico\' AND `wc_country`.`name2` = \'Mexico\' AND `wc_country`.`group_name` = \'A\') OR (`wc_country`.`name` = \'Cameroon\' AND `wc_country`.`name2` = \'Cameroon\' AND `wc_country`.`group_name` = \'A\') OR (`wc_country`.`name` = \'Spain\' AND `wc_country`.`name2` = \'Spain\' AND `wc_country`.`group_name` = \'B\') OR (`wc_country`.`name` = \'Netherlands\' AND `wc_country`.`name2` = \'Netherlands\' AND `wc_country`.`group_name` = \'B\') OR (`wc_country`.`name` = \'Chile\' AND `wc_country`.`name2` = \'Chile\' AND `wc_country`.`group_name` = \'B\') OR (`wc_country`.`name` = \'Australia\' AND `wc_country`.`name2` = \'Australia\' AND `wc_country`.`group_name` = \'B\') OR (`wc_country`.`name` = \'Colombia\' AND `wc_country`.`name2` = \'Colombia\' AND `wc_country`.`group_name` = \'C\') OR (`wc_country`.`name` = \'Greece\' AND `wc_country`.`name2` = \'Greece\' AND `wc_country`.`group_name` = \'C\') OR (`wc_country`.`name` = \'Cote%20d\'\'Ivoire\' AND `wc_country`.`name2` = \'Cote%20d\'\'Ivoire\' AND `wc_country`.`group_name` = \'C\') OR (`wc_country`.`name` = \'Japan\' AND `wc_country`.`name2` = \'Japan\' AND `wc_country`.`group_name` = \'C\') OR (`wc_country`.`name` = \'Uruguay\' AND `wc_country`.`name2` = \'Uruguay\' AND `wc_country`.`group_name` = \'D\') OR (`wc_country`.`name` = \'Costa Rica\' AND `wc_country`.`name2` = \'Costa Rica\' AND `wc_country`.`group_name` = \'D\') OR (`wc_country`.`name` = \'England\' AND `wc_country`.`name2` = \'England\' AND `wc_country`.`group_name` = \'D\') OR (`wc_country`.`name` = \'Italy\' AND `wc_country`.`name2` = \'Italy\' AND `wc_country`.`group_name` = \'D\') OR (`wc_country`.`name` = \'Switzerland\' AND `wc_country`.`name2` = \'Switzerland\' AND `wc_country`.`group_name` = \'E\') OR (`wc_country`.`name` = \'Ecuador\' AND `wc_country`.`name2` = \'Ecuador\' AND `wc_country`.`group_name` = \'E\') OR (`wc_country`.`name` = \'France\' AND `wc_country`.`name2` = \'France\' AND `wc_country`.`group_name` = \'E\') OR (`wc_country`.`name` = \'Honduras\' AND `wc_country`.`name2` = \'Honduras\' AND `wc_country`.`group_name` = \'E\') OR (`wc_country`.`name` = \'Argentina\' AND `wc_country`.`name2` = \'Argentina\' AND `wc_country`.`group_name` = \'F\') OR (`wc_country`.`name` = \'Bosnia and Herzegovina\' AND `wc_country`.`name2` = \'Bosnia and Herzegovina\' AND `wc_country`.`group_name` = \'F\') OR (`wc_country`.`name` = \'Iran\' AND `wc_country`.`name2` = \'Iran\' AND `wc_country`.`group_name` = \'F\') OR (`wc_country`.`name` = \'Nigeria\' AND `wc_country`.`name2` = \'Nigeria\' AND `wc_country`.`group_name` = \'F\') OR (`wc_country`.`name` = \'Germany\' AND `wc_country`.`name2` = \'Germany\' AND `wc_country`.`group_name` = \'G\') OR (`wc_country`.`name` = \'Portugal\' AND `wc_country`.`name2` = \'Portugal\' AND `wc_country`.`group_name` = \'G\') OR (`wc_country`.`name` = \'Ghana\' AND `wc_country`.`name2` = \'Ghana\' AND `wc_country`.`group_name` = \'G\') OR (`wc_country`.`name` = \'United States\' AND `wc_country`.`name2` = \'United States\' AND `wc_country`.`group_name` = \'G\') OR (`wc_country`.`name` = \'Belgium\' AND `wc_country`.`name2` = \'Belgium\' AND `wc_country`.`group_name` = \'H\') OR (`wc_country`.`name` = \'Algeria\' AND `wc_country`.`name2` = \'Algeria\' AND `wc_country`.`group_name` = \'H\') OR (`wc_country`.`name` = \'Russia\' AND `wc_country`.`name2` = \'Russia\' AND `wc_country`.`group_name` = \'H\') OR (`wc_country`.`name` = \'South Korea\' AND `wc_country`.`name2` = \'South Korea\' AND `wc_country`.`group_name` = \'H\'))');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+});
+
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<?php
+/**
+ * The Template for displaying all single posts.
+ *
+ * @package Cryout Creations
+ * @subpackage parabola
+ * @since parabola 0.5
+ */
+
+get_header();?>
+
+		<section id="container" class="<?php echo parabola_get_layout_class(); ?>">
+			<div id="content" role="main">
+			<?php cryout_before_content_hook(); ?>
+			
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<?php cryout_post_title_hook(); ?>
+					<div class="entry-meta">
+						<?php parabola_posted_on(); cryout_post_meta_hook(); ?>
+					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'parabola' ), 'after' => '</span></div>' ) ); ?>
+					</div><!-- .entry-content -->
+
+
+				<!--
+					world cup content 
+				-->
+
+				<!-- This is the list of matches sorted by date -->
+				<?php 
+					global $wpdb;
+
+					// get country iso
+					$meta = get_post_meta( get_the_ID(),'iso'); 
+
+					// query to find custom sort type for matches
+					$loop = new WP_Query( array( 
+						'p' => $post->ID,
+						'post_type' => 'match', 
+						'posts_per_page' => -1, 
+						'meta_value' => $meta[0],
+						// 'orderby' => 'meta_value',
+					 //    'meta_key' => 'match_date' 
+					)); 
+
+					// echo '<h2>Match Schedule</h2>';
+					// echo '<table class="table">';
+					include 'template_predict_include.php';
+
+
+					$query_predict = array(
+						'post_type' 	=> 'prediction',
+						'posts_per_page' => -1, 
+						'meta_query' 	=> array(
+							array(
+								'key' 	=> 'match_id',
+								'value' => $post->ID
+							)
+						)
+					);
+					$prediction_query = new WP_Query( $query_predict );
+					// $prediction_custom_fields = get_post_custom($prediction_query->post->ID);
+					// $prediction_team1score = $prediction_custom_fields['team_1_score'][0];
+					// $prediction_team2score = $prediction_custom_fields['team_2_score'][0];
+
+
+					echo '<h2>User Predictions</h2>';
+
+					echo '<table class="table table-bordered" style="background:#444;">';
+					foreach ($prediction_query->posts as $prediction) 
+					{
+						$prediction_custom_fields = get_post_custom($prediction->ID);
+						$prediction_team1score = $prediction_custom_fields['team_1_score'][0];
+						$prediction_team2score = $prediction_custom_fields['team_2_score'][0];
+						$prediction_userid = $prediction_custom_fields['user_id'][0];
+
+						$user_info = get_userdata($prediction_userid);
+						$prediction_username = $user_info->user_login;
+
+						echo '<tr>';
+						echo '<td align="center">'.get_avatar( $prediction_userid,48 ).'</td>';
+						echo '<td>'.$prediction_username.'</td>';
+						echo '<td>'.$prediction_team1score . ' vs ' . $prediction_team2score.'</td>';
+						echo '</tr>';
+
+						// echo '<pre>';
+						// print_r($prediction_custom_fields);
+						// echo '</pre>';
+					}
+					echo '</table>';
+				?>
+				<!-- end world cup content -->
+
+
+
+
+
+
+
+
+
+<?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
+					<div id="entry-author-info">
+						<div id="author-avatar">
+							<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'parabola_author_bio_avatar_size', 60 ) ); ?>
+						</div><!-- #author-avatar -->
+						<div id="author-description">
+							<h2><?php printf( esc_attr__( 'About %s', 'parabola' ), get_the_author() ); ?></h2>
+							<?php the_author_meta( 'description' ); ?>
+							<div id="author-link">
+								<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+									<?php printf( __( 'View all posts by ','parabola').'%s <span class="meta-nav">&rarr;</span>', get_the_author() ); ?>
+								</a>
+							</div><!-- #author-link	-->
+						</div><!-- #author-description -->
+					</div><!-- #entry-author-info -->
+<?php endif; ?>
+
+					<div class="entry-utility">
+						<?php parabola_posted_in(); ?>
+						<?php edit_post_link( __( 'Edit', 'parabola' ), '<span class="edit-link">', '</span>' ); cryout_post_footer_hook(); ?>
+					</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ); ?></div>
+					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ); ?></div>
+				</div><!-- #nav-below -->
+
+				<?php comments_template( '', true ); ?>
+
+<?php endwhile; // end of the loop. ?>
+
+			<?php cryout_after_content_hook(); ?>
+			</div><!-- #content -->
+	<?php parabola_get_sidebar(); ?>
+		</section><!-- #container -->
+
+<?php get_footer(); ?>

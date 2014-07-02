@@ -1,0 +1,32 @@
+{
+    "name":         "countdown",
+    "title":        "The Final Countdown",
+    "description":  "jQuery plugin to display a countdown clock on your page.",
+    "keywords": [
+        "countdown",
+        "coupons",
+        "auction",
+        "clock",
+        "datetime",
+        "date"
+    ],
+    "version":          "2.0.0",
+    "author": {
+        "name":         "Edson Hilios",
+        "url":          "http://edson.hilios.com.br"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url":  "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "homepage": "http://hilios.github.io/jQuery.countdown/",
+    "docs":     "http://hilios.github.io/jQuery.countdown/documentation.html",
+    "demo":     "http://hilios.github.io/jQuery.countdown/examples.html",
+    "bugs":     "https://github.com/hilios/jQuery.countdown/issues",
+    "download": "https://github.com/hilios/jQuery.countdown/archive/2.0.0.zip",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}

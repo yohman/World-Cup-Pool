@@ -1,0 +1,31 @@
+/*
+Theme Name:     World Cup Child by yohman
+Description:    Child theme for the Twenty Thirteen theme 
+Author:         yohda
+Author URI:     http: //gis.yohman.com/
+Template:       parabola
+Version:        0.1.0
+*/
+@import url("../parabola/style.css");
+
+.site-header h1 a,
+.site-header h2 a {
+	font-size: 40px;
+}
+
+select {
+	font-size:1.0em;
+}
+h1 {
+	font-size:2.0em;
+}
+h2 {
+	font-size:1.5em;
+}
+
+
+#content tr td {
+	border-top: 1px solid transparent;
+	padding: 6px 24px;
+	vertical-align: middle;
+}
